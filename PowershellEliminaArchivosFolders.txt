@@ -1,9 +1,9 @@
 #Add-PSSnapin Microsoft.SharePoint.PowerShell
 
 # Replace siteurl with actual web url
-$web = Get-SPWeb -Identity "http://sigav2dgrm.scjn.pjf.gob.mx";
+$web = Get-SPWeb -Identity "http://url.sitio";
 # Replace docurl with document library url
-$list = $web.GetList("DocumentosSJP");
+$list = $web.GetList("Documentos");
 $fechaeliminacion=(Get-Date 01/07/2016);
 function DeleteFiles {
 param($folderUrl)
